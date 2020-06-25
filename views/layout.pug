@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    block styleSection
+      link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block headerSection
+      include ./partials/header.pug
+    
+    block content
+      
+    block mainSection
+      h1 Main section
+
+    block footerSection
+      include ./partials/footer.pug
+
+    
