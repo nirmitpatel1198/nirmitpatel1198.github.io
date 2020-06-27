@@ -9,14 +9,26 @@ router.get('/', (req, res, next)=> {
 
 /*Aout me Page.*/
 router.get('/about', (req, res, next)=>{
-console.log("Hit");
   res.render('about.pug');
 
 });
 
 
-router.get('/jay',(req,res,next)=>{
-  res.send("Success Call");
+/*skills Page.*/
+router.get('/services', (req, res, next)=>{
+  res.render('services.pug');
 
-})
+});
+
+/*Projects Page.*/
+router.get('/projects', (req, res, next)=>{
+  res.render('projects.pug');
+
+});
+
+/*Contact Me Page.*/
+router.get('/contact', (req, res, next)=>{
+  res.render('contact.pug');
+
+});
 module.exports = router;

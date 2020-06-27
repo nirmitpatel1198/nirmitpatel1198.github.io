@@ -1,0 +1,65 @@
+extends layout.pug
+block mainSection
+    //contact
+    div(class="contact" id="contact")
+        div(class="container")
+            div(class="col-md-6 contact-left")
+                h3(data-aos="zoom-in") contact me
+                    p.
+                        Lorem ipsum primis in faucibus. Praesent faucibus massa elit, vitae ultrices libero dapibus nec. 
+                        Maecenas cursus rutrum odio ut convallis. Curabitur viverra est in diam tincidunt, nec tincidunt tortor dapibus.
+                form(action="#" method="post")
+                    div(class="col-md-6 agileits_agile_about_mail_left")
+                        input(type="text" name="Name" placeholder="Name" required="")
+                        input(type="text" name="Subject" placeholder="Company Name" required="")
+                    
+                    div(class="col-md-6 agileits_agile_about_mail_left")
+                        input(type="email" name="Email" placeholder="Email" required="")
+                        input(type="text" name="Phone" placeholder="Phone" required="")
+                        
+                    textarea(name="Message" placeholder="Message..." required="")
+                    input(type="submit" value="Submit")
+
+            div(class="col-md-6 contact-right")
+                div(class="col-md-6 contactright1")
+                    span(class="glyphicon glyphicon-map-marker" aria-hidden="true")
+                    h4 Location
+                    p 1680 Richmond St, London, ON N6G 3Y9, Canada
+           
+                div(data-aos="flip-down" class="col-md-6 contactright1")
+                    span(class="glyphicon glyphicon-phone" aria-hidden="true")
+                    h4 Phone
+                    p +0(12) 000 123 3120
+                    p +0(12) 000 123 3121
+                
+                div(class="clearfix")
+                div(class="col-md-6 contactright1")
+                    span(class="glyphicon glyphicon-envelope" aria-hidden="true")
+                    h4 Support
+                    p 
+                        a(href="mailto:info@example.com") info@support.com
+                
+                div(data-aos="flip-up" class="col-md-6 contactright1")
+                    span(class="glyphicon glyphicon-envelope" aria-hidden="true")
+                    h4 Mail
+                    p
+                        a(href="mailto:info@example.com") info@example.com
+                        a(href="mailto:info@example.com") info@example1.com
+                
+                div(class="clearfix")
+                ul(class="top-links")
+                    li(data-aos="flip-right")
+                        a(href="#")
+                            i(class="fa fa-facebook")
+                    li(data-aos="flip-right")
+                        a(href="#")
+                            i(class="fa fa-twitter")
+                    li(data-aos="flip-right")
+                        a(href="#")
+                            i(class="fa fa-google-plus")
+                    li(data-aos="flip-right")
+                        a(href="#")
+                            i(class="fa fa-linkedin")
+            div(class="clearfix")
+
+    //contact 

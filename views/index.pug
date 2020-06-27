@@ -1,4 +1,58 @@
 extends layout
+block headerSection
+
+block mainSection
+    // banner
+    #home.banner
+        .agileinfo-dot
+            .container
+                // header
+                .header-w3layouts
+                    // Navigation
+                    nav.navbar.navbar-default.navbar-fixed-top
+                        .navbar-header.page-scroll
+                            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+                                span.sr-only My_Design
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                                h1
+                            a.navbar-brand(href='/')
+                        // Collect the nav links, forms, and other content for toggling
+                        .collapse.navbar-collapse.navbar-ex1-collapse
+                            ul.nav.navbar-nav.navbar-right.cl-effect-15
+                                // Hidden li included to remove active class from about link when scrolled up past about section
+                                li.hidden
+                                    a.page-scroll(href='#page-top')
+                                li
+                                    a.page-scroll(href='/') Home
+                                li
+                                    a.page-scroll(href='/about') About Me
+                                li
+                                    a.page-scroll(href='/services') Services
+                                li
+                                    a.page-scroll(href='/projects') Projects
+                                li
+                                    a.page-scroll(href='/contact') Contact Me                       
+            
+                    // /.navbar-collapse
+                    // /.container
+                    // //header
+                .w3_banner_info
+                    .w3_banner_info_grid
+                        h2(data-aos='fade-right') Hi, i am 
+                        h2(data-aos='fade-right') Nirmit Patel.
+                        h5 UI/UX Designer.
+                        p
+                            | Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit.
+                            | Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+                        
+
+                .thim-click-to-bottom
+                    a.scroll(href='#about')
+                        i.fa.fa-arrows-v(aria-hidden='true')
+        // banner
+
 
 
 

@@ -1,1 +1,70 @@
-h4 Copyrights Humbingo technologies
+// copyright
+.copyright-agile
+  .container
+    h4  Nirmit Patel
+    p
+      | © 20120 Nirmit Patel. All rights reserved | Template by 
+      a(href='http://w3layouts.com') W3layouts
+    .clearfix
+// copyright
+// js
+script(type='text/javascript', src='javascripts/jquery-2.1.4.min.js')
+// for bootstrap working
+script(src='javascripts/bootstrap.js')
+// //for bootstrap working
+// //js
+// Gallery-Tab-JavaScript
+script(src='javascripts/cbpFWTabs.js')
+script.
+  (function() {
+  [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+  new CBPFWTabs( el );
+  });
+  })();
+// //Gallery-Tab-JavaScript
+// Swipe-Box-JavaScript
+script(src='javascripts/jquery.swipebox.min.js')
+script(type='text/javascript').
+  jQuery(function($) {
+  $(".swipebox").swipebox();
+  });
+// //Swipe-Box-JavaScript
+// Scrolling Nav JavaScript
+script(src='javascripts/scrolling-nav.js')
+// //fixed-scroll-nav-js
+script(src='javascripts/index.js')
+// skills bars JS FILE
+// animation effects-js files
+script(src='javascripts/aos.js')
+// //animation effects-js
+script(src='javascripts/aos1.js')
+// //animation effects-js
+// animation effects-js files
+// //here starts scrolling icon
+script(src='javascripts/SmoothScroll.min.js')
+script(type='text/javascript', src='javascripts/move-top.js')
+script(type='text/javascript', src='javascripts/easing.js')
+// here stars scrolling script
+script(type='text/javascript').
+  $(document).ready(function() {
+  /*
+  var defaults = {
+  containerID: 'toTop', // fading element id
+  containerHoverID: 'toTopHover', // fading element hover id
+  scrollSpeed: 1200,
+  easingType: 'linear'
+  };
+  */
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  });
+// //here ends scrolling script
+// //here ends scrolling icon
+// scrolling script
+script(type='text/javascript').
+  jQuery(document).ready(function($) {
+  $(".scroll").click(function(event){
+  event.preventDefault();
+  $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  });
+  });
+// //scrolling script
