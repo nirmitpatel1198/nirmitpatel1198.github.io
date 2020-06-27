@@ -1,0 +1,29 @@
+nav.navbar.navbar-default.navbar-fixed-top
+          .navbar-header.page-scroll
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+              span.sr-only My_Design
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            h1
+              a.navbar-brand(href='index.html') My Design
+          // Collect the nav links, forms, and other content for toggling
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            ul.nav.navbar-nav.navbar-right.cl-effect-15
+              // Hidden li included to remove active class from about link when scrolled up past about section
+              li.hidden
+                a.page-scroll(href='#page-top')
+              li
+                a.page-scroll.scroll(href='#home') Home
+              li
+                a.page-scroll.scroll(href='#about') About
+              li
+                a.page-scroll.scroll(href='#skills') Skills
+              li
+                a.page-scroll.scroll(href='#education') Education & Experience 
+              li
+                a.page-scroll.scroll(href='#portfolio') Portfolio
+              li
+                a.page-scroll.scroll(href='#contact') Contact
+          // /.navbar-collapse
+          // /.container
